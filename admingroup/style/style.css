@@ -1,0 +1,70 @@
+﻿@font-face {
+    font-family: CANDARA; /* Имя шрифта */
+    src: url("../../fonts/CANDARA.TTF"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: CANDARAB; /* Имя шрифта */
+    src: url("../../fonts/CANDARAB.TTF"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: CANDARAI; /* Имя шрифта */
+    src: url("../../fonts/CANDARAI.TTF"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: CANDARAZ; /* Имя шрифта */
+    src: url("../../fonts/CANDARAZ.TTF"); /* Путь к файлу со шрифтом */
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.formbox{
+	margin: 0 auto;
+}
+.input{
+	width: 380px;
+	height: 30px;
+	margin-bottom: 8px;
+	border: 1px solid #292929;
+	outline: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.button{
+	font-size: 20px;
+	font-family: CANDARA;
+	font-weight: bold;
+	color: #fff;
+}
+.error{
+	height: 40px;
+	font-family: CANDARA;
+	font-weight: bold;
+	font-style: italic;
+	color: #fff;
+	position: relative;
+}
+
+.main_link{
+	font-family: CANDARA; 
+	text-decoration: none;
+	color: #fff;
+}
+.main_post_pages > a{
+	color: grey; 
+	text-decoration: none;
+}
+.main_post_pages > a:hover{
+	color:lightgrey;
+}
+.navigation_a_hover{
+	color: grey; 
+	text-decoration: none;
+}
+.navigation_a_hover:hover{
+	color: lightgrey; 
+	text-decoration: none;
+}
