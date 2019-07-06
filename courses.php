@@ -1,11 +1,11 @@
 ﻿<?php
     require_once"inc/header.php";
-    	include("inc/conf.php");
-    ?>
+    include("inc/conf.php");
+?>
 <content class="main">
     <div class="container">
         <div class="row">
-            <h1 class="title col-md-12 col-xs-12 text-center" data-aos="zoom-in-down">Курсы</h1>
+            <h1 class="title col-lg-12 col-xs-12 text-center" data-aos="zoom-in-down">Курсы</h1>
             <?php
                 $sql2 = "SELECT * FROM `courses_tbl`";
                 $result2 = mysql_query($sql2);

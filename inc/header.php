@@ -54,13 +54,15 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
         <link href="http://bootstraptema.ru/snippets/slider/2016/bcts/bootstrap-touch-slider.css" rel="stylesheet" media="all">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="build/css/intlTelInput.css">
         <link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             $(window).load(function() {
@@ -92,16 +94,41 @@
         margin: 0;
         padding: 0;
         }
-        body {
-        position: relative;
-        overflow-x: hidden;
-        }
         @font-face {
-        font-family: CANDARA;
-        src: url("../fonts/CANDARA.TTF");
+            font-family: CANDARA;
+            src: url("../fonts/CANDARA.TTF");
         }
-        body,
-        html { height: 100%;}
+        ::-webkit-scrollbar-button {
+            background-image:url('');
+            background-repeat:no-repeat;
+            width:5px;
+            height:0px
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color:#ecedee
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 0px;
+            border-radius: 12px;
+            background-color:#47e8c4;
+        }
+
+        ::-webkit-scrollbar-thumb:hover{
+            background-color:#104e61;
+        }
+
+        ::-webkit-resizer{
+            background-image:url('');
+            background-repeat:no-repeat;
+            width:4px;
+            height:0px
+        }
+
+        ::-webkit-scrollbar{
+            width: 6px;
+        }
         #before-load {
           position: fixed;
           left: 0; 
