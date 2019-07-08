@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if ( isset( $_SESSION['rgrid'] ) ) {
+    if ( isset( $_SESSION['id'] ) ) {
         // Grab user data from the database using the user_id
         // Let them access the "logged in only" pages
     include("header.php");

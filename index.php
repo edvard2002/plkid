@@ -8,20 +8,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6" data-aos="fade-up">
-                            <div class="serviceBox">
+                            <div class="serviceBox" style="min-height: 540px;">
                                 <div class="service-icon">
                                     <i class="fa fa-edit"></i>
                                 </div>
                                 <div class="service-content">
                                     <h3 class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">КОНСУЛЬТАЦИЯ</h3>
                                     <p class="description" data-aos="zoom-in-up">
-                                        Не знаешь что выбрать или не можешь решиться? В таком случае, обратись в учебный центр.<br> Тебя проконсультируют и помогут в твоем выборе.
+                                        Не знаешь что выбрать или не можешь решиться? В таком случае, обратись в учебный центр.Тебя проконсультируют и помогут в твоем выборе.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" data-aos="fade-up">
-                            <div class="serviceBox">
+                            <div class="serviceBox" style="min-height: 540px;">
                                 <div class="service-icon">
                                     <i class="fa fa-check-circle"></i>
                                 </div>
@@ -34,20 +34,20 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" data-aos="fade-up">
-                            <div class="serviceBox">
+                            <div class="serviceBox" style="min-height: 540px;">
                                 <div class="service-icon">
                                     <i class="fa fa-briefcase"></i>
                                 </div>
                                 <div class="service-content">
                                     <h3 class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">ОБУЧЕНИЕ</h3>
                                     <p class="description" data-aos="zoom-in-up">
-                                        Посещение занятий является одним из основных критериев, входящих в состав требований.Каждый урок это взаимосвязь с последующими темами. <br>
+                                        Посещение занятий является одним из основных критериев, входящих в состав требований.Каждый урок это взаимосвязь с последующими темами.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" data-aos="fade-up">
-                            <div class="serviceBox">
+                            <div class="serviceBox" style="min-height: 540px;">
                                 <div class="service-icon">
                                     <i class="fa fa-angellist"></i>
                                 </div>

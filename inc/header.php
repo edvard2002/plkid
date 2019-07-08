@@ -139,11 +139,12 @@
           z-index: 1001; 
         }
         #before-load i {
-          font-size: 70px;
+          font-size: 120px;
           position: absolute;
-          left: 50%; 
+          left: 0;
+          right: 0; 
           top: 50%; 
-          margin: -35px 0 0 -35px;
+          margin: -50px 0 0 0;
         }
         .nav .open > a,
         .nav .open > a:hover,
@@ -449,6 +450,16 @@
         #thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
         display: block;
         opacity: .8;
+        }
+        .carousel-inner .item img{
+            height: 100vh;
+            width:100%;
+        }
+        @media screen and (max-width : 480px) {
+            .carousel-inner .item img{
+                height: 50vh;
+                width:100%;
+            }     
         }
         #thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
         opacity: 1;
@@ -1059,10 +1070,37 @@
         .carousel-control .fa{
             margin-top: 50vh;
         }
+        @media screen and (max-width: 640px) {
+            .carousel-control .fa{
+                margin-top: 20vh;
+            }
+        }        
+/*        @media screen and (min-width: 320px) {
+            #before-load i {
+                left:40%;
+            }
+        }        
+        @media screen and (min-width: 375px) {
+            #before-load i {
+                left:44%;
+            }
+        }        
+        @media screen and (min-width: 425px) {
+            #before-load i {
+                left:45%;
+            }
+        }        
+        @media screen and (min-width: 768px) {
+            #before-load i {
+                left:45%;
+            }
+        }*/
     </style>
     <body>
         <div id="before-load">
-            <i class="fa fa-spinner fa-spin"></i>
+            <a class="text-center col-lg-12 col-md-12 col-xs-12 col-sm-12" style="top:45%; text-decoration: none; font-weight: 800;">    
+             PLKIiD<i class="fa fa-superpowers fa-spin text-center"></i>
+            </a>
         </div>
         <header class="col-md-12 col-lg-12 col-xs-12">
             <div id="wrapper">
@@ -1120,35 +1158,35 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/slider1.jpg" alt="Los Angeles" style="height: 100vh;width:100%;">
+                            <img src="images/slider1.jpg">
                             <div class="carousel-caption">
                                 <h1>(Bjarne Stroustrup)</h1>
                                 <h3>Существует только два вида языков программирования: те, которые всех раздражают, и те, которые никто не использует.</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/slider2.jpg" alt="Chicago" style="width:100%;height: 100vh;">
+                            <img src="images/slider2.jpg">
                             <div class="carousel-caption">
                                 <h1>(Jon Ribbens)</h1>
                                 <h3>PHP — это малое зло, созданное дилетантами, а Perl — великое зло, созданное лучшими извращенцами в своей сфере.</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/slider3.jpg" alt="New york" style="width:100%;height: 100vh;">
+                            <img src="images/slider3.jpg">
                             <div class="carousel-caption">
                                 <h1>(Alan J. Perlis)</h1>
                                 <h3>Есть два способа написать программу без ошибок; работает только третий.</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/slider4.jpg" alt="New york" style="width:100%;height: 100vh;">
+                            <img src="images/slider4.jpg">
                             <div class="carousel-caption">
                                 <h1>(Michael Dell)</h1>
                                 <h3>Для того, чтобы неординарно мыслить, не надо быть гением, провидцем и даже выпускником университета. Достаточно иметь почву для размышлений и умение мечтать.</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/slider5.jpg" alt="New york" style="width:100%;height: 100vh;">
+                            <img src="images/slider5.jpg">
                             <div class="carousel-caption">
                                 <h1>(Steve Wozniak)</h1>
                                 <h3>Образованность – это способность рисковать и давать вещам собственную оценку, а также способность подвергать утверждения сомнению, задавать правильные вопросы и добиваться истины – а не просто принимать все так, как вам это преподнесли.</h3>

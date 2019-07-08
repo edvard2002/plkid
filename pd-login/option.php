@@ -19,8 +19,23 @@
     	}
     ?>
 <main id="main">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">function call(){var msg=$('#formx').serialize();$.ajax({type:'POST',url:'action_ajax_form.php',data:msg,success:function(data){$('#results').html(data);},error:function(xhr,str){alert('Возникла ошибка: '+xhr.responseCode);}});}</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function call(){
+            var msg=$('#formx').serialize();
+            $.ajax({
+                type:'POST',
+                url:'action_ajax_form.php',
+                data:msg,
+                success:function(data){
+                    $('#results').html(data);
+                },
+                error:function(xhr,str){
+                    alert('Возникла ошибка: '+xhr.responseCode);
+                }
+            });
+        }
+    </script>
     <form  method="POST" id="formx" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 option_form" action="javascript:void(0);" onsubmit="call()">
         <label for="site_name">Наименование сайта</label><br/>
         <input type="text" name="site_name" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" value="<?php echo $site_name1; ?>"><br/>

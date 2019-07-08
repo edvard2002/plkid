@@ -1,22 +1,6 @@
 <?php
 require_once 'config.php';
 session_start();
-
-// if ( ! empty( $_POST ) ) {
-//     if ( isset( $_POST['regcode'] ) && isset( $_POST['password'] ) ) {
-//         // Getting submitted user data from database
-//         $stmt = $link->prepare("SELECT * FROM user WHERE regcode = pwd");
-//         $stmt->bind_param('s', $_POST['regcode']);
-//         $stmt->execute();
-//         $result = $stmt->get_result();
-//         $user = $result->fetch_object();
-            
-//         // Verify user password and set $_SESSION
-//         if ( password_verify( $_POST['password'], $user->password ) ) {
-//             $_SESSION['id'] = $user->ID;
-//         }
-//     }
-// }
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
     $myid = $password = "";
