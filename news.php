@@ -1,4 +1,4 @@
-﻿<?php require_once "inc/header.php";?>
+﻿<?php include_once"inc/header.php";?>
 
 <content class="main">
 	<div class="container">
@@ -41,77 +41,77 @@
 
 						if($row["status"] == "none"){?>
                             <div class="blog-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <div class="meta">
-                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
-                              <ul class="details">
-                                <li class="date"><?php echo $row["post_date"];?></li>
-                                <li class="tags">
-                                  <ul>
-                                    <li><a href="#">Рубрика:</a></li>
-                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="description">
-                              <h1></h1>
-                              <h2><?php echo $row["post_title"];?></h2>
-                              <p><?php echo $row["post_desc"];?></p>
-                              <p class="read-more">
-                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
-                              </p>
-                            </div>
-                          </div>							
+	                            <div class="meta">
+	                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
+	                              <ul class="details">
+	                                <li class="date"><?php echo $row["post_date"];?></li>
+	                                <li class="tags">
+	                                  <ul>
+	                                    <li><a href="#">Рубрика:</a></li>
+	                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
+	                                  </ul>
+	                                </li>
+	                              </ul>
+	                            </div>
+	                            <div class="description">
+	                              <h1></h1>
+	                              <h2><?php echo $row["post_title"];?></h2>
+	                              <p><?php echo $row["post_desc"];?></p>
+	                              <p class="read-more">
+	                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
+	                              </p>
+	                            </div>
+                            </div>							
                         <?php
 						}elseif($row["status"] == "open"){
 							?>
-                          <div class="blog-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <div class="meta">
-                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
-                              <ul class="details">
-                                <li class="date"><?php echo $row["post_date"];?></li>
-                                <li class="tags">
-                                  <ul>
-                                    <li><a href="#">Рубрика:</a></li>
-                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="description">
-                              <h1>НАБОР ОТКРЫТ</h1>
-                              <h2><?php echo $row["post_title"];?></h2>
-                              <p><?php echo $row["post_desc"];?></p>
-                              <p class="read-more">
-                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
-                              </p>
-                            </div>
-                          </div>
+                          	<div class="blog-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+	                            <div class="meta">
+	                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
+	                              <ul class="details">
+	                                <li class="date"><?php echo $row["post_date"];?></li>
+	                                <li class="tags">
+	                                  <ul>
+	                                    <li><a href="#">Рубрика:</a></li>
+	                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
+	                                  </ul>
+	                                </li>
+	                              </ul>
+	                            </div>
+	                            <div class="description">
+	                              <h1>НАБОР ОТКРЫТ</h1>
+	                              <h2><?php echo $row["post_title"];?></h2>
+	                              <p><?php echo $row["post_desc"];?></p>
+	                              <p class="read-more">
+	                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
+	                              </p>
+	                            </div>
+                          	</div>
 							<?php
 						}else{
 							?>
-                          <div class="blog-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <div class="meta">
-                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
-                              <ul class="details">
-                                <li class="date"><?php echo $row["post_date"];?></li>
-                                <li class="tags">
-                                  <ul>
-                                    <li><a href="#">Рубрика:</a></li>
-                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="description">
-                              <h1>НАБОР ЗАКРЫТ</h1>
-                              <h2><?php echo $row["post_title"];?></h2>
-                              <p><?php echo $row["post_desc"];?></p>
-                              <p class="read-more">
-                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
-                              </p>
-                            </div>
-                          </div>
+                          	<div class="blog-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+	                            <div class="meta">
+	                              <div class="photo" style="background-image: url(uploads/<?php echo $row["post_img"]?>)"></div>
+	                              <ul class="details">
+	                                <li class="date"><?php echo $row["post_date"];?></li>
+	                                <li class="tags">
+	                                  <ul>
+	                                    <li><a href="#">Рубрика:</a></li>
+	                                    <li><a href="#"><?php echo $row["post_category"];?></a></li>
+	                                  </ul>
+	                                </li>
+	                              </ul>
+	                            </div>
+	                            <div class="description">
+	                              <h1>НАБОР ЗАКРЫТ</h1>
+	                              <h2><?php echo $row["post_title"];?></h2>
+	                              <p><?php echo $row["post_desc"];?></p>
+	                              <p class="read-more">
+	                                <a href="newspage.php?news_id=<?php echo $row['id'];?>">Подробнее</a>
+	                              </p>
+	                            </div>
+                          	</div>
 							<?php
 						}
 					}
@@ -158,12 +158,11 @@
 							'.$page1right.$page2right.$page3right.$page4right.$page5right.$nextpage;
 						}
 						?>
-					</div>
 				</div>
-
+			</div>
 		</div>
 	</div>
-			</content>
+</content>
 <?php
 	require_once "inc/footer.php";
 ?>

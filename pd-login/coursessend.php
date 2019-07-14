@@ -13,13 +13,13 @@
   echo $courses_date = $_POST["courses_date"];
   echo $courses_free = $_POST["courses_free"];
 
-  $sql = "INSERT INTO 
+  $sql = "INSERT INTO
   `courses_tbl`(
-      `courses_name`, 
-      `somename`, 
-      `courses_keywords`, 
-      `courses_text`, 
-      `courses_date`, 
+      `courses_name`,
+      `somename`,
+      `courses_keywords`,
+      `courses_text`,
+      `courses_date`,
       `courses_free`
   ) 
   VALUES (
@@ -31,10 +31,11 @@
       '".$courses_free."'
   )";
   $result = mysql_query($sql);
-}else{
-  header("Location: index.php");
-}
 ?>
 <script>
   window.location.href = 'courseslist.php';
 </script>
+<?php }else{
+  header("Location: index.php");
+}
+?>

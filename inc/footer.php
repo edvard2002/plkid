@@ -3,7 +3,7 @@
 	    <div class="container-fluid text-md-left">
 	        <!-- Grid row -->
 	        <div class="row">
-	            <div class="col-md-12 _img">
+	            <div class="col-md-12 _img" data-tilt data-tilt-scale="1.2">
 	                <img src="images/logouc-footer.png">
 	            </div>
 	            <hr class="clearfix w-100 d-md-none pb-3">
@@ -58,5 +58,10 @@
 	        </div>
 	    </div>
 	</footer>
+    <script src="../pd-login/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+        })
+    </script>
 </body>
 </html>

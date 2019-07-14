@@ -70,7 +70,7 @@
             });
         </script>
         <script>
-          AOS.init();
+            AOS.init();
         </script>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -1075,28 +1075,8 @@
                 margin-top: 20vh;
             }
         }        
-/*        @media screen and (min-width: 320px) {
-            #before-load i {
-                left:40%;
-            }
-        }        
-        @media screen and (min-width: 375px) {
-            #before-load i {
-                left:44%;
-            }
-        }        
-        @media screen and (min-width: 425px) {
-            #before-load i {
-                left:45%;
-            }
-        }        
-        @media screen and (min-width: 768px) {
-            #before-load i {
-                left:45%;
-            }
-        }*/
     </style>
-    <body>
+    <body style="overflow-x: hidden;">
         <div id="before-load">
             <a class="text-center col-lg-12 col-md-12 col-xs-12 col-sm-12" style="top:45%; text-decoration: none; font-weight: 800;">    
              PLKIiD<i class="fa fa-superpowers fa-spin text-center"></i>
